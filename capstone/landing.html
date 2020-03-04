@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <title> Clock n' Dock | Sign Up</title>
+    
+
+    <link href="https://fonts.google.com/specimen/Libre+Franklin" rel="stylesheet">
+    <link rel="stylesheet" href="css/landingpage-style.css" type="text/css">
+    
+    </head>
+    <body>
+        
+        <header id="showcase">
+            <div class="color-overlay">
+            </div>
+            <div class="logo">
+                <a href="./index.html"><img src="img/logo-capstone-light.png" alt="Truck Logo" style="width:145px;height:75px;"></a>
+            </div>
+            <div class="buttons">
+            <div class="row">
+            <div class="col-lg-6">
+            <a href="#" class="button1">SIGN UP</a>
+            </div>
+            
+            <div class="col-lg-6">
+                    <button class="button2" onclick="openForm()">LOGIN</button>
+               
+                <div class="open-button form-popup" id="myForm">
+        
+              <form action="/action_page.php" class="form-container">
+                  <h3>LOGIN TO YOUR ACCOUNT</h3>
+
+                <label for="username"><b>Username</b></label>
+                <input type="text" placeholder="CDL Number" name="username" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit" class="btn">Login</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form> 
+             </div>
+            </div>
+                </div>
+                </div>
+        </header>
+
+</body>
+    
+        <script>
+            
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        
+        <script>
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+        
+</html>
